@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 180px;
+  height: 180px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+}
