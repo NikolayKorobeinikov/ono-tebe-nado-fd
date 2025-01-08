@@ -1,3 +1,8 @@
+body {
+  font-family: Raleway, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -50,8 +55,7 @@
   line-height: 24.3px;
 }
 
-.address__tel,
-.address__email {
+.address__link {
   color: rgb(0, 0, 0);
 }
 
@@ -65,10 +69,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   background: rgb(0, 0, 0, 0.6);
 }
@@ -87,6 +88,7 @@
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 23px;
+  text-transform: uppercase;
 }
 
 .aligned-text_center {
@@ -152,41 +154,33 @@
 .card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   padding: 48px 40px;
   background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card-link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -214,8 +208,6 @@
 .lots__look-more-link {
   margin-top: 30px;
   margin-left: 40px;
-  color: rgb(0, 0, 0);
-  font-family: "Raleway";
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
@@ -277,8 +269,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 180px;
-  height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 82px;
 }
 
 .footer__menu {

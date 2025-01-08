@@ -13,8 +13,6 @@
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -22,8 +20,6 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
-  color: rgb(0, 0, 0);
 }
 
 img {
